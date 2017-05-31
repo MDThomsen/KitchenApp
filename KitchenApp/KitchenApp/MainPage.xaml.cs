@@ -12,14 +12,17 @@ namespace KitchenApp
         public MainPage()
         {
             InitializeComponent();
-
+            SharedCodeTest values = new SharedCodeTest(1, "Clicked me!");
             theButton.Clicked += (sender, args) =>
             {
-                theButton.Text = "Touched me!";
+                
+                theButton.Text = String.Format("Clicked me {0} times",values.getNumber());
             };
 
             this.Content = theButton;
               
+            
+
         }
     }
 }
