@@ -1,13 +1,9 @@
-﻿
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 
-namespace KitchenApp.Droid.Activities
+namespace KitchenApp.Droid.UI.Activities
 {
     [Activity(Label = "SplashActivity", Theme = "@style/SplashTheme", MainLauncher = true, Icon = "@drawable/ivlogo" , ScreenOrientation = ScreenOrientation.Portrait)]
     public class SplashActivity : Activity

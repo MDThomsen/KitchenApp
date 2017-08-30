@@ -5,7 +5,7 @@ using KitchenApp.Database;
 using KitchenApp.Droid.Controller;
 using System.Threading.Tasks;
 
-namespace KitchenApp.Droid
+namespace KitchenApp.Droid.UI.Activities
 {
     [Activity(Label = "MainActivity", Theme = "@style/MainTheme", ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
