@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 
 namespace KitchenApp
@@ -15,9 +10,7 @@ namespace KitchenApp
             InitializeComponent();
 
             MainPage = new KitchenApp.MainPage();
-            KitchenApp.Core.Tables.Meal test;
-
-
+                
 
 
 
