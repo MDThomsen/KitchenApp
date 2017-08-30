@@ -19,7 +19,7 @@ namespace KitchenApp.Database
 
         public async Task<Meal> GetById(string id)
         {
-            httpClient.BaseAddress = new Uri("https://api.backendless.com/"+appId+"/"+apiKey+"/data/Meal/");
+            httpClient.BaseAddress = baseAddress;
             HttpResponseMessage response = await httpClient.GetAsync(id);
             string result = await response.Content.ReadAsStringAsync();
 

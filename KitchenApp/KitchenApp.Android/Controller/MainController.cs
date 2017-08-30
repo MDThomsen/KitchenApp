@@ -17,6 +17,11 @@ namespace KitchenApp.Droid.Controller
         {
             httpClient = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate });
         }
+         
+        public async Task UserLogin(string login, string password)
+        {
+            User.UserLogin(httpClient, appId, apiKey, login, password);
+        }
 
         public async Task<Meal> getMealById(string id)
         {
