@@ -32,7 +32,7 @@ namespace KitchenApp.Droid.UI.Fragments
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
-            return inflater.Inflate(Resource.Layout.LoginLayout, container, false);
+            return inflater.Inflate(Resource.Layout.login_fragment, container, false);
         }
     }
 }

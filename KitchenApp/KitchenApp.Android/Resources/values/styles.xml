@@ -2,7 +2,7 @@
 <resources>
 
   <style name="MainTheme" parent="MainTheme.Base">
-  <item name="android:colorAccent">#ffc54e38</item><item name="android:textColorPrimary">#ffffffff</item><item name="android:textColorSecondary">#fff5e2df</item></style>
+  <item name="android:colorAccent">#fffdfdfd</item><item name="android:textColorPrimary">#fffef8f9</item><item name="android:textColorSecondary">#ffffffff</item><item name="android:colorButtonNormal">#ffe4152e</item><item name="android:colorControlActivated">#ffffffff</item></style>
   <!-- Base theme applied no matter what API -->
   <style name="MainTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
     <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
@@ -19,6 +19,11 @@
     <item name="colorAccent">#FF4081</item>
     <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight and colorSwitchThumbNormal. -->
+    <item name="colorControlNormal">@color/iron</item>
+    <item name="colorControlActivated">@color/white</item>
+    <item name="colorControlHighlight">@color/white</item>
+    <item name="android:textColorHint">@color/iron</item>
+
     <item name="windowActionModeOverlay">true</item>
 
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>

@@ -11,11 +11,12 @@ namespace KitchenApp.Droid.UI.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             OverridePendingTransition(Resource.Animation.slide_in, Resource.Animation.slide_out);
-            base.OnCreate(savedInstanceState);
 
-            Intent intent = new Intent(this, typeof(MainActivity));
+            Intent intent = new Intent(this, typeof(LoginActivity));
             StartActivity(intent); 
             Finish();
+            base.OnCreate(savedInstanceState);
         }
+
     }
 }

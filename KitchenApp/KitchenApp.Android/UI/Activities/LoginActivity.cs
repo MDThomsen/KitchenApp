@@ -11,9 +11,11 @@ namespace KitchenApp.Droid.UI.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.login_activity);
+
             var ft = this.FragmentManager.BeginTransaction();
             var lf = LoginFragment.NewInstance();
-            ft.Add(Resource.Id.login_activity, lf);
+            ft.Add(Resource.Id.fragment_container, lf);
             ft.Commit();
         }
     }
